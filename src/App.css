@@ -1,0 +1,55 @@
+body {
+    background: #141414;
+    color: white;
+}
+.legend{
+    margin-left: 100px;
+    width: 85%;
+}
+.movies{
+
+    width: 60%;
+    display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-column-gap: 20px;
+	grid-row-gap: 50px;
+}
+
+.header {
+    margin-top: 20px;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+
+}
+
+.form-control{
+   
+    width: 300px;
+}
+
+.image-container {
+    position: relative;
+    transition: transfrom 0.2s;
+}
+
+.image-container:hover {
+    cursor:pointer;
+    transform: scale(1.1);
+}
+.image-container:hover .overlay {
+    opacity: 1;
+}
+
+.overlay{
+    position: absolute;
+    background: rgb(0,0,0,0.8);
+    width: 100%;
+    transition: 0.5 ease;
+    opacity: 0;
+    bottom: 0;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+}
